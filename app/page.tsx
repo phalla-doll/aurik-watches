@@ -206,6 +206,19 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Trust / Featured In Section */}
+      <section className="bg-brand-black text-white border-t border-white/10 px-6 py-8 md:py-12">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <span className="text-micro text-white/50 text-center md:text-left">Recognized By</span>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60">
+            <span className="font-clash text-xl md:text-2xl uppercase tracking-widest">Hodinkee</span>
+            <span className="font-serif text-lg md:text-xl italic">GQ Magazine</span>
+            <span className="font-clash text-xl md:text-2xl uppercase tracking-widest">Forbes</span>
+            <span className="font-sans text-xl md:text-2xl font-bold tracking-tighter">WIRED</span>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
