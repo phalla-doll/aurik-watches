@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-satoshi: "Satoshi", sans-serif;
+  --font-clash: "Clash Display", sans-serif;
+  
+  --color-brand-red: #E03C31;
+  --color-brand-black: #111111;
+  --color-brand-gray: #F4F4F4;
+  --color-brand-border: rgba(17, 17, 17, 0.1);
+}
+
+@layer base {
+  body {
+    @apply font-satoshi text-brand-black bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-clash font-medium tracking-tight;
+  }
+}
+
+@layer utilities {
+  .grid-border {
+    @apply border-brand-border;
+  }
+  .text-micro {
+    @apply text-[10px] uppercase tracking-widest font-medium;
+  }
+}
