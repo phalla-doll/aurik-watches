@@ -54,9 +54,9 @@ export default function ProductPage() {
       </section>
 
       {/* Product Grid */}
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-brand-border gap-px border-b grid-border">
         {products.map((product, i) => (
-          <div key={product.id} className={`flex flex-col border-b grid-border ${i % 3 !== 2 ? 'lg:border-r' : ''} ${i % 2 !== 1 ? 'md:border-r lg:border-r-0' : ''} ${(i % 3 !== 2 && i % 2 !== 1) ? 'lg:border-r' : ''}`}>
+          <div key={product.id} className="flex flex-col bg-white">
             <div className="relative h-[450px] bg-brand-gray p-8 flex items-center justify-center group overflow-hidden">
               <Image
                 src={product.img}

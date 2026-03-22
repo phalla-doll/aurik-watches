@@ -62,8 +62,8 @@ export default function Home() {
       </div>
 
       {/* Split Feature 1 */}
-      <section className="grid grid-cols-1 md:grid-cols-2 border-b grid-border">
-        <div className="p-8 md:p-16 lg:p-24 flex flex-col justify-center border-b md:border-b-0 md:border-r grid-border">
+      <section className="grid grid-cols-1 md:grid-cols-2 bg-brand-border gap-px border-b grid-border">
+        <div className="p-8 md:p-16 lg:p-24 flex flex-col justify-center bg-white">
           <div className="flex items-center gap-2 mb-6">
             <div className="w-2 h-2 rounded-full bg-brand-red"></div>
             <span className="text-micro">Crafted for everyday explorers.</span>
@@ -93,13 +93,13 @@ export default function Home() {
       </div>
 
       {/* Product Grid */}
-      <section className="grid grid-cols-1 md:grid-cols-3 border-b grid-border">
+      <section className="grid grid-cols-1 md:grid-cols-3 bg-brand-border gap-px border-b grid-border">
         {[
           { id: "UA-05", type: "Dual Time Zone Functionality", img: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1000&auto=format&fit=crop" },
           { id: "UA-06", type: "Automatic Chronograph", img: "https://images.unsplash.com/photo-1587836374828-cb4387df3eb7?q=80&w=1000&auto=format&fit=crop" },
           { id: "UA-07", type: "Automatic Chronograph", img: "https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=1000&auto=format&fit=crop" }
         ].map((product, i) => (
-          <div key={product.id} className={`flex flex-col ${i !== 2 ? 'border-b md:border-b-0 md:border-r grid-border' : ''}`}>
+          <div key={product.id} className="flex flex-col bg-white">
             <div className="relative h-[400px] bg-brand-gray p-8 flex items-center justify-center">
               <Image
                 src={product.img}
@@ -130,8 +130,8 @@ export default function Home() {
       </section>
 
       {/* Split Feature 2 */}
-      <section className="grid grid-cols-1 md:grid-cols-2 border-b grid-border">
-        <div className="relative h-[50vh] md:h-[60vh] bg-white border-b md:border-b-0 md:border-r grid-border order-2 md:order-1">
+      <section className="grid grid-cols-1 md:grid-cols-2 bg-brand-border gap-px border-b grid-border">
+        <div className="relative h-[50vh] md:h-[60vh] bg-white order-2 md:order-1">
           <Image
             src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=1000&auto=format&fit=crop"
             alt="Watch face detail"
@@ -139,7 +139,7 @@ export default function Home() {
             className="object-cover grayscale"
           />
         </div>
-        <div className="p-8 md:p-16 lg:p-24 flex flex-col justify-center order-1 md:order-2">
+        <div className="p-8 md:p-16 lg:p-24 flex flex-col justify-center bg-white order-1 md:order-2">
           <div className="flex items-center justify-between mb-12">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-brand-red"></div>
