@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Search, User, Menu } from "lucide-react";
 
 export default function Home() {
@@ -110,9 +111,9 @@ export default function Home() {
             <div className="p-4 flex flex-col gap-3">
               <div className="flex items-center justify-between border-b grid-border pb-3">
                 <span className="font-clash font-medium">{product.id}</span>
-                <button className="text-micro bg-brand-gray px-3 py-1 hover:bg-brand-black hover:text-white transition-colors flex items-center gap-2">
+                <Link href={`/product/${product.id.toLowerCase()}`} className="text-micro bg-brand-gray px-3 py-1 hover:bg-brand-black hover:text-white transition-colors flex items-center gap-2">
                   Book Now <span className="font-clash">&gt;</span>
-                </button>
+                </Link>
               </div>
               <div className="flex flex-col gap-1 text-micro text-brand-black/60">
                 <div className="flex justify-between border-b grid-border pb-2">
