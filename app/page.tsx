@@ -7,13 +7,13 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b grid-border px-6 py-4 flex items-center justify-between">
-        <div className="text-3xl font-clash font-semibold tracking-widest uppercase">
+        <Link href="/" className="text-3xl font-clash font-semibold tracking-widest uppercase">
           Aurik
-        </div>
+        </Link>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wider">
-          <a href="#" className="hover:text-brand-red transition-colors">Product</a>
-          <a href="#" className="hover:text-brand-red transition-colors">About</a>
-          <a href="#" className="hover:text-brand-red transition-colors">Contact</a>
+          <Link href="/product" className="hover:text-brand-red transition-colors">Product</Link>
+          <Link href="#" className="hover:text-brand-red transition-colors">About</Link>
+          <Link href="#" className="hover:text-brand-red transition-colors">Contact</Link>
         </div>
         <div className="flex items-center gap-6">
           <button className="hover:text-brand-red transition-colors"><Search size={20} strokeWidth={1.5} /></button>
@@ -188,15 +188,15 @@ export default function Home() {
       <footer className="bg-brand-black text-white px-6 py-16 md:py-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-3">
-            <div className="text-4xl font-clash font-semibold tracking-widest uppercase mb-8">
+            <Link href="/" className="text-4xl font-clash font-semibold tracking-widest uppercase mb-8 block">
               Aurik
-            </div>
+            </Link>
           </div>
           <div className="md:col-span-6 flex flex-col gap-2 text-3xl md:text-5xl lg:text-6xl font-clash uppercase">
-            <a href="#" className="hover:text-brand-red transition-colors">Product</a>
-            <a href="#" className="text-white/50 hover:text-white transition-colors">About</a>
-            <a href="#" className="text-white/50 hover:text-white transition-colors">Process</a>
-            <a href="#" className="text-white/50 hover:text-white transition-colors">Contacts</a>
+            <Link href="/product" className="hover:text-brand-red transition-colors">Product</Link>
+            <Link href="#" className="text-white/50 hover:text-white transition-colors">About</Link>
+            <Link href="#" className="text-white/50 hover:text-white transition-colors">Process</Link>
+            <Link href="#" className="text-white/50 hover:text-white transition-colors">Contacts</Link>
           </div>
           <div className="md:col-span-3 flex flex-col items-start md:items-end gap-3">
             {['Awwwards', 'TikTok', 'Behance', 'LinkedIn', 'Instagram', 'Email'].map((link) => (
